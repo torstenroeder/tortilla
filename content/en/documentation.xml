@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE page SYSTEM "../doctypes/page.dtd">
+
+<page>
+    <meta-information>
+        <title>Documentation</title>
+        <author>Torsten Roeder</author>
+        <date>November 2012</date>
+        <filename>documentation.xml</filename>
+        <translation lang="de">dokumentation</translation>
+    </meta-information>
+    <content display="by-divisions" default="first-division">
+        <heading>Documentation</heading>
+        <division name="files">
+            <translation lang="de">konfiguration</translation>
+            <heading>Configuration</heading>
+            <paragraph>There are three files where configurations can be edited:</paragraph>
+            <list type="floating-first-lines">
+                <item>
+                    <line>index.php</line>
+                    <line>here you need to insert your server names (multiple servers allowed) and the default page</line>
+                </item>
+                <item>
+                    <line>site.xml</line>
+                    <line>this file is language specific (see subfolders of content/) and determines the general site structure</line>
+                </item>
+                <item>
+                    <line>.htaccess</line>
+                    <line>if you need some special filetypes to be forwarded to the browser, insert them here</line>
+                </item>
+            </list>
+        </division>
+    </content>
+</page>

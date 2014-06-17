@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE page SYSTEM "../doctypes/page.dtd">
+
+<page>
+    <meta-information>
+        <title>Development</title>
+        <author>Torsten Roeder</author>
+        <date>November 2012</date>
+        <filename>development.xml</filename>
+        <translation lang="de">entwicklung</translation>
+    </meta-information>
+    <content display="by-divisions" default="first-division">
+        <heading>Development</heading>
+        <division name="history">
+            <translation lang="de">geschichte</translation>
+            <heading>Version History</heading>
+            <list type="floating-first-lines">
+                <item>
+                    <line>version 1.3</line>
+                    <line>translation elements included</line>
+                </item>
+                <item>
+                    <line>version 1.2</line>
+                    <line>restructured (navigation is now modular)</line>
+                </item>
+                <item>
+                    <line>version 1.1.2</line>
+                    <line>added optional site keywords</line>
+                </item>
+                <item>
+                    <line>version 1.1.1</line>
+                    <line>added site language iso attribute</line>
+                </item>
+                <item>
+                    <line>version 1.1</line>
+                    <line>grab all headings as meta keywords</line>
+                    <line>added class attribute to image element</line>
+                    <line>added site language element</line>
+                    <line>configuration structure of index.php is now complete</line>
+                    <line>all links now operate with complete urls (relative urls caused crawling trouble)</line>
+                </item>
+                <item>
+                    <line>version 1.0.1</line>
+                    <line>slightly optimized code</line>
+                </item>
+                <item>
+                    <line>version 1.0</line>
+                    <line>first experimental version</line>
+                </item>
+            </list>
+        </division>
+        <division name="planned">
+            <translation lang="de">geplant</translation>
+            <heading>Planned Features</heading>
+            <list type="floating-first-lines">
+                <item>
+                    <line>version 1.3.x</line>
+                    <line>add optional site logo and subtitle elements</line>
+                    <line>add optional site favicon element</line>
+                    <line>add general site update date</line>
+                </item>
+            </list>
+        </division>
+    </content>
+</page>

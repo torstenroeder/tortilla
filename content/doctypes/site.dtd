@@ -1,0 +1,22 @@
+<!-- TORTILLA SITE DTD -->
+<!-- version 1.3 -->
+
+<!ELEMENT site (title,subtitle?,language,keywords?,navigation) >
+
+    <!ELEMENT title (#PCDATA) >
+    <!ELEMENT subtitle (#PCDATA) >
+    <!ELEMENT language (#PCDATA) >
+    <!ATTLIST language
+        iso  CDATA  #REQUIRED
+    >
+    <!ELEMENT keywords (#PCDATA) >
+
+    <!ELEMENT navigation (item)* >
+    <!ATTLIST navigation
+        type  (cascading|parallel)  #IMPLIED
+    >
+        
+    <!ELEMENT item (#PCDATA) >
+    <!ATTLIST item
+        name  CDATA  #IMPLIED
+    >

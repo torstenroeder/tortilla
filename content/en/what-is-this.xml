@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE page SYSTEM "../doctypes/page.dtd">
+
+<page>
+    <meta-information>
+        <title>What is this?</title>
+        <author>Torsten Roeder</author>
+        <date>November 2012</date>
+        <filename>what-is-this.xml</filename>
+        <translation lang="de">was-ist-das</translation>
+    </meta-information>
+    <content display="all-divisions">
+        <heading>What is this?</heading>
+        <division name="introduction">
+            <translation lang="de">einfuehrung</translation>
+            <heading>Introduction</heading>
+            <paragraph>Tortilla is a simple content management framework for personal websites which operates mainly on XML/XSLT. Tortilla uses the
+                PHP XML library, which is included in most Apache environments by standard.</paragraph>
+            <paragraph>Tortilla focuses on content, but in comparison to a complex and resource intense CMS, all tasks can be done with a text editor
+                and ftp access.</paragraph>
+            <paragraph>Using Tortilla is similar to editing a page in HTML. The main difference is that Tortilla provides a content oriented structure
+                which is then automatically rendered to HTML.</paragraph>
+            <paragraph>Tortilla requires you to use its predefined document structure. The basic unit is a page, which is then hierarchically
+                subdivided into divisions and sections. Content elements like links and lists correspond more or less to typical HTML elements. The
+                structure also allows to associate content elements with custom CSS classes.</paragraph>
+        </division>
+    </content>
+</page>

@@ -1,0 +1,231 @@
+/* TORTILLA CSS */
+/* version 1.3 */
+
+/* uncomment this line for testing the box layout */
+/* * { border:1px dotted gray;} */
+
+/* HTML BODY */
+
+html {
+    overflow:-moz-scrollbars-vertical;
+}
+body {
+    width:720px;
+    margin:15px auto;
+    padding:0;
+    text-align:left;
+    font-family: 'Port Lligat Sans', sans-serif;
+    font-size:15px;
+    line-height:20px;
+    color:#332; /* black */
+    background-color:#669; /* blue gray */
+}
+
+/* DIVISIONS */
+
+div {
+	margin:0;
+	padding:0;
+}
+div.header {
+}
+
+div.translations {
+	color:#776; /* gray text */
+	line-height:16px;
+	font-size:12px;
+	padding:5px 10px 0 0;
+	float:right;
+}
+
+div.content {
+	padding:30px;
+	background-color:#fcfcfc; /* white */
+}
+div.byline {
+	margin-top:15px;
+	padding:10px 30px;
+	background-color:#fcfcfc; /* white */
+	color:#776; /* gray text */
+	text-align:center;
+	font-size:12px;
+	line-height:16px;
+}
+
+/* HEADINGS */
+
+h1,h2,h3,h4 {
+	margin:0;
+	padding:0;
+	font-weight:bold;
+	color:#e80; /* orange */
+}
+/* site heading */
+h1 {
+	background-color:#fcfcfc; /* white */
+	padding:15px 30px;
+	font-size:24px;
+	line-height:32px;
+}
+/* page heading */
+h2 {
+	font-size:21px;
+	line-height:28px;
+	padding:0 0 12px 0;
+}
+/* division heading */
+h3 {
+	font-size:18px;
+	line-height:24px;
+	padding:12px 0 6px 0;
+}
+/* section heading */
+h4 {
+	font-size:15px;
+	line-height:20px;
+	padding:6px 0 6px 0;
+	color:#99a; /* light gray */
+}
+
+/* PARAGRAPHS */
+
+p {
+	margin:0;
+	padding:6px 0;
+}
+/* clearing paragraph: required for short pages */
+p.clear {
+	clear:both;
+}
+
+/* LINES */
+
+span.title {
+    color:#332; /* black */
+}
+span.description, span.occupation {
+    color:#776; /* gray */
+}
+span.weblink {
+    padding-left:20px;
+    background-image:url('pinvoke-icons/paper-plane.png');
+    background-repeat:no-repeat;
+}
+span.email {
+    padding-left:20px;
+    background-image:url('pinvoke-icons/quill.png');
+    background-repeat:no-repeat;
+}
+
+/* LISTS */
+
+/* horizontal navigation */
+ul.navigation {
+    margin:0;
+    padding:0;
+    text-indent:0;
+}
+ul.navigation li {
+    display:inline-block;
+    vertical-align:top;
+    padding:5px 10px;
+    margin-right:5px;
+    background-color:#e8e8f0; /* light blue */
+}
+ul.navigation li:hover {
+    background-color:#f0f0f8; /* light blue */
+}
+ul.navigation li.active {
+    background-color:#fcfcfc; /* white */
+}
+ul.level1 li {
+    font-size:15px;
+    line-height:20px;
+    margin-bottom:15px;
+    width:100px;
+    text-align:center;
+}
+ul.level2 li {
+    font-size:11px;
+    line-height:14px;
+}
+ul.level2 {
+}
+
+/* content list */
+div.content ul,ol {
+    margin:0;
+    padding:6px 0;
+    text-indent:0;
+}
+div.content li {
+    margin:0;
+    padding:6px 0;
+    line-height:20px;
+}
+
+/* list: floating first lines */
+div.content ul.floating-first-lines {
+    list-style-type:none;
+}
+div.content ul.floating-first-lines li div.first-item {
+    position:absolute;
+    margin-left:0;
+}
+div.content ul.floating-first-lines li div.following-items {
+    margin-left:120px;
+}
+
+/* list: bullets */
+div.content ul.bullets {
+    list-style-type:disc;
+}
+div.content ul.bullets li {
+    padding-left:15px;
+    margin-left:15px;
+}
+
+/* LINKS */
+
+a {
+    text-decoration:none;
+}
+a:link, a:visited {
+    color:#66b; /* blue */
+}
+a:focus, a:hover, a:active {
+    color:#88d; /* blue */
+}
+a.web {
+    padding-left:20px;
+    font-size:14px;
+    background-image:url('fugue-icons/paper-plane.png');
+    background-repeat:no-repeat;
+}
+a.email {
+    padding-left:20px;
+    font-size:14px;
+    background-image:url('fugue-icons/quill.png');
+    background-repeat:no-repeat;
+}
+a.file {
+    padding-left:20px;
+    font-size:14px;
+    background-image:url('fugue-icons/document.png');
+    background-repeat:no-repeat;
+}
+
+/* IMAGES */
+
+img {
+    margin:0;
+    padding:0;
+}
+
+/* content image (used for portrait only) */
+div.content img {
+    float:right;
+    margin:0 0 30px 30px;
+    padding:1px;
+    border:2px solid #bbc; /* gray */
+}

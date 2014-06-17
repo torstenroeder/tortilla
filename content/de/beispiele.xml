@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE page SYSTEM "../doctypes/page.dtd">
+
+<page>
+    <meta-information>
+        <title>Beispiele</title>
+        <author>Torsten Roeder</author>
+        <date>November 2012</date>
+        <filename>beispiele.xml</filename>
+        <translation lang="en">examples</translation>
+    </meta-information>
+    <content display="all-divisions">
+        <heading>Beispiele</heading>
+        <division>
+            <list type="bullets">
+                <item>
+                    <line>Astrid Kirchhof</line>
+                    <line><link type="web" href="http://www.astrid-kirchhof.de">www.astrid-kirchhof.de</link></line>
+                </item>
+                <item>
+                    <line>Karin Schelcher</line>
+                    <line><link type="web" href="http://www.karin-schelcher.de">www.karin-schelcher.de</link></line>
+                </item>
+                <item>
+                    <line>Vokalensemble Lankwitz</line>
+                    <line><link type="web" href="http://www.vokalensemble-lankwitz.de">www.vokalensemble-lankwitz.de</link></line>
+                </item>
+                <item>
+                    <line>Deutsch-Deutscher Kammerchor e.V.</line>
+                    <line><link type="web" href="http://www.deutsch-deutscher-kammerchor.de">www.deutsch-deutscher-kammerchor.de</link></line>
+                </item>
+            </list>
+        </division>
+    </content>
+</page>

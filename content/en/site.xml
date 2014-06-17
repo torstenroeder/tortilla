@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE site SYSTEM "../doctypes/site.dtd">
+
+<site>
+    
+    <!-- set <h1> for all pages -->
+    <title>Tortilla</title>
+    
+    <!-- meta information -->
+    <language iso="en">English</language> <!-- meta information -->
+    <keywords>Tortilla, Content Management, Framework, XML, XSLT, PHP, DTD</keywords>
+    
+    <!-- primary navigation -->
+    <navigation type="parallel">
+        <item name="home">What is this?</item>
+        <item name="examples">Examples</item>
+        <item name="download">Download</item>
+        <item name="development">Development</item>
+        <item name="documentation">Documentation</item>
+    </navigation>
+    
+</site>

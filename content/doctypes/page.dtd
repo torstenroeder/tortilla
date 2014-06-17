@@ -1,0 +1,130 @@
+<!-- TORTILLA PAGE DTD -->
+<!-- version 1.3 -->
+
+<!ELEMENT page (meta-information,content) >
+
+    <!ELEMENT meta-information (title,author*,date,filename,translation?) >
+
+        <!ELEMENT title       (#PCDATA) >
+        <!ELEMENT author      (#PCDATA) >
+        <!ELEMENT date        (#PCDATA) >
+        <!ELEMENT filename    (#PCDATA) >
+        <!ELEMENT translation (#PCDATA) >
+        <!ATTLIST translation
+            lang  (de|en)  "de"
+        >
+
+    <!ELEMENT content
+        (heading|image|division
+        |list|paragraph|line|get-content)*
+    >
+    <!ATTLIST content
+        display  (all-divisions|by-divisions|selected-image)  "all-divisions"
+        default  (first-division|division-list)               "first-division"
+        objects  (image)                                      #IMPLIED
+        class    CDATA                                        #IMPLIED
+    >
+
+        <!ELEMENT heading (#PCDATA) >
+        <!ATTLIST heading
+            class  CDATA  #IMPLIED
+            short  CDATA  #IMPLIED
+        >
+        
+        <!ELEMENT division
+            (translation?,(heading|image|video|map|section|list|paragraph|line|get-content)*)
+        >
+        <!ATTLIST division
+            name   CDATA  #IMPLIED
+            class  CDATA  #IMPLIED
+        >
+        
+        <!ELEMENT section
+            (heading|image|video|map
+            |list|paragraph|line|get-content)*
+        >
+        <!ATTLIST section
+            name   CDATA  #IMPLIED
+            class  CDATA  #IMPLIED
+        >
+        
+        <!-- PARAGRAPHS -->
+
+        <!ELEMENT paragraph
+            (#PCDATA
+            |heading|image|line|list
+            |link|get-content)*
+        >
+        <!ATTLIST paragraph
+            content  (image)  #IMPLIED
+        >
+        
+            <!-- LINES -->
+
+            <!ELEMENT line (#PCDATA|link)* >
+            <!ATTLIST line
+                content  CDATA  "text"
+            >
+
+            <!-- LINKS -->
+
+            <!ELEMENT link (#PCDATA)* >
+            <!ATTLIST link
+                type  (email|site|web|file|openstreetmap)  #REQUIRED
+                href       CDATA  #IMPLIED
+                latitude   CDATA  #IMPLIED
+                longitude  CDATA  #IMPLIED
+                zoom       CDATA  #IMPLIED
+            >
+
+        <!-- LISTS -->
+
+        <!ELEMENT list (item|get-content)* >
+        <!ATTLIST list
+            type  (bullets|floating-first-lines|paragraphs)  #IMPLIED
+            content (keywords) #IMPLIED
+        >
+        
+            <!ELEMENT item
+                (#PCDATA
+                |heading|image|line)* 
+            >
+
+        <!-- IMAGES, VIDEOS, MAPS -->
+
+        <!ELEMENT image (#PCDATA) >
+        <!ATTLIST image
+            filename   CDATA  #REQUIRED
+            extension  CDATA  #REQUIRED
+            float    (left|right|none)  #IMPLIED
+            border   (default|none)  #IMPLIED
+        >
+
+        <!ELEMENT video (#PCDATA) >
+        <!ATTLIST video
+            title       CDATA  #REQUIRED
+            width       CDATA  #REQUIRED
+            height      CDATA  #REQUIRED
+            margin      CDATA  #REQUIRED
+            filename    CDATA  #REQUIRED
+            startimage  CDATA  #REQUIRED
+        >
+
+        <!ELEMENT map (#PCDATA) >
+        <!ATTLIST map
+            type        (openstreetmap)  #REQUIRED
+            latitude    CDATA  #REQUIRED
+            longitude   CDATA  #REQUIRED
+            zoom        CDATA  #REQUIRED
+            filename    CDATA  #REQUIRED
+        >
+
+        <!-- EXTERNAL CONTENT -->
+
+        <!ELEMENT get-content EMPTY>
+        <!ATTLIST get-content
+            from       CDATA  #REQUIRED
+            container  CDATA  #REQUIRED
+            element    CDATA  #REQUIRED
+            position   CDATA  #IMPLIED
+        >

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE page SYSTEM "../doctypes/page.dtd">
+
+<page>
+    <meta-information>
+        <title>Download</title>
+        <author>Torsten Roeder</author>
+        <date>November 2012</date>
+        <filename>download.xml</filename>
+        <translation lang="en">download</translation>
+    </meta-information>
+    <content display="all-divisions">
+        <heading>Download</heading>
+        <division>
+            <paragraph>
+                <line>Version 1.3</line>
+                <line><link type="file">tortilla_1-3.zip</link></line>
+            </paragraph>
+        </division>
+    </content>
+</page>

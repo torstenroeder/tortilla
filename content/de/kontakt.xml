@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE page SYSTEM "../doctypes/page.dtd">
+
+<page>
+    <meta-information>
+        <title>Kontakt</title>
+        <author>Torsten Roeder</author>
+        <date>November 2012</date>
+        <filename>kontakt.xml</filename>
+        <translation lang="en">contact</translation>
+    </meta-information>
+    <content display="all-divisions">
+        <heading>Kontakt</heading>
+        <division>
+            <paragraph>
+                <line>Torsten Roeder</line>
+                <link type="web" href="http://www.torstenroeder.de">torstenroeder.de</link>
+            </paragraph>
+        </division>
+    </content>
+</page>
